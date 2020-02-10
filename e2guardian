@@ -1,1 +1,19 @@
 
+# Instalação e configuração
+
+# Criar uma unidade certificadora CA
+# Configurar DNS
+# Linsta do repositorio
+fetch -q -o /usr/local/etc/pkg/repos/Unofficial.conf https://raw.githubusercontent.com/marcelloc/Unofficial-pfSense-packages/master/Unofficial.24.conf
+# Atualizar a lista
+pkg update
+# Checar a software na lista
+pkg search e2g
+# Instalando software
+pkg install pfSense-pkg-E2guardian5-0.5.3.3
+# Alterar porta padrão 8080
+porta 1980 HTTP
+# HTTP WORKS
+2500 CONEXOES SIMULTANEAS 
+# PORTA ssl
+1981
